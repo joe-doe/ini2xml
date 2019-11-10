@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>Playlist</title>
+	<trackList>
+		<track>
+			<location>dvb-t://frequency=626000000:bandwidth=8</location>
+			<title>Alpha HD</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+				<vlc:option>dvb-adapter=0</vlc:option>
+				<vlc:option>live-caching=300</vlc:option>
+				<vlc:option>sout=#display</vlc:option>
+				<vlc:option>no-sout-all</vlc:option>
+				<vlc:option>sout-keep</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<location>dvb-t://frequency=738000000:bandwidth=8</location>
+			<title>Nickelodeon</title>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+				<vlc:option>dvb-adapter=0</vlc:option>
+				<vlc:option>live-caching=300</vlc:option>
+				<vlc:option>sout=#display</vlc:option>
+				<vlc:option>no-sout-all</vlc:option>
+				<vlc:option>sout-keep</vlc:option>
+				<vlc:option>program=3064</vlc:option>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+		<vlc:item tid="0"/>
+	</extension>
+</playlist>
