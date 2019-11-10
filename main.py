@@ -16,7 +16,7 @@ def add_track(data, vlc_id, root_element):
     ET.SubElement(extension, "vlc:option").text = 'sout-keep'
     ET.SubElement(extension, "vlc:option").text = f'program={data["service_id"]}'
     formatted_tree = ET.ElementTree(root)
-    formatted_tree.write("filename.xml", xml_declaration=True, encoding="UTF-8")
+    formatted_tree.write("filename.xspf", xml_declaration=True, encoding="UTF-8")
 
 
 config = ConfigParser()
